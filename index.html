@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ayush | Frontend Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body><div id="scrollProgress"></div>
+
+
+<div class="cursor"></div>
+
+<header class="navbar">
+  <div class="logo">Ayush<span>Dev</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+<button class="theme-toggle" id="themeToggle">🌙</button>
+
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-box reveal">
+    <h1>Frontend Developer</h1>
+    <p>
+      I build modern, responsive and interactive websites
+      using HTML, CSS and JavaScript.
+    </p>
+    <button class="magnetic" onclick="scrollToSection('projects')">
+      View Projects
+    </button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about reveal" id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a BCA student and frontend developer focused on building
+    clean, responsive and user-friendly web interfaces.
+    I enjoy turning ideas into real, working websites.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="skills reveal" id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Responsive Design</div>
+    <div class="skill">Git & GitHub</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="resume-github reveal" id="resume">
+  <h2>Resume & GitHub</h2>
+  <p>Download my resume or explore my code on GitHub.</p>
+
+  <div class="rg-buttons">
+    <a href="resume/Ayush_Frontend_Developer_Resume.pdf" download class="rg-btn">
+      ⬇️ Download Resume
+    </a>
+    <a href="https://github.com/yourusername" target="_blank" class="rg-btn outline">
+      💻 GitHub Profile
+    </a>
+  </div>
+</section>
+
+
+
+<section class="projects" id="projects">
+  <h2 class="reveal">Projects</h2>
+
+  <div class="project-grid">
+
+   <article class="project-card reveal">
+  <div class="project-thumb">
+    <img src="images/gym.png" alt="Gym Website Preview">
+  </div>
+  <h3>Gym Website</h3>
+  <p>Responsive gym website with modern UI and smooth animations.</p>
+  <div class="project-links">
+    <a href="https://mb-power-gym-website.netlify.app" target="_blank">Live Demo</a>
+  </div>
+</article>
+
+
+    <article class="project-card reveal">
+ <div class="project-thumb">
+   <img src="images/clinic.png" alt="Clinic Website Preview">
+  </div>
+      <h3>Clinic Website</h3>
+      <p>Clean and responsive healthcare clinic website.</p>
+      <div class="project-links">
+        <a href="https://green-health-care.netlify.app" target="_blank">
+          Live Demo
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card reveal">
+ <div class="project-thumb">
+    <img src="images/portfolio.png" alt="Portfolio Website Preview">
+  </div>
+      <h3>Portfolio Website</h3>
+      <p>Premium animated portfolio showcasing projects and skills.</p>
+      <div class="project-links">
+        <a href="https://aayush-frontend-portfolio.netlify.app" target="_blank">
+          Live Demo
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact reveal" id="contact">
+  <h2>Contact</h2>
+  <button class="magnetic" onclick="showContact()">Get In Touch</button>
+  <p id="contactInfo"></p>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2025 Ayush | Frontend Developer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
